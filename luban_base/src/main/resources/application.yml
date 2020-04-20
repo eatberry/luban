@@ -1,0 +1,15 @@
+spring:
+    #数据源
+  datasource:
+    url: jdbc:mysql://localhost:3306/luban??useUnicode=true&amp;characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  typeAliasesPackage: com.luban.base.entity
+  mapperLocations: classpath:sql/*.xml
+
+server:
+  port: 8081
+  #configLocation: classpath:/mybatis-config.xml
