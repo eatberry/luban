@@ -19,4 +19,8 @@ public class UserController {
     public ResultEntity selectAllUsers(){
         return userService.findAllUser();
     }
+
+    public static void main(String[] args) {
+        System.out.println("test");
+    }
 }
