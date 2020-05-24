@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Random;
+
 @RestController
 @RequestMapping(value = "/user")
 public class UserController {
@@ -21,6 +23,10 @@ public class UserController {
     }
 
     public static void main(String[] args) {
-        System.out.println("test");
+        Random ran = new Random(1);
+        for (int i = 0; i < 5; i++) {
+            System.out.println(ran.nextInt());
+        }
     }
+
 }
